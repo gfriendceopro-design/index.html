@@ -6,117 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
-    * {
-      box-sizing: border-box;
-    }
+* {
+  box-sizing: border-box;
+}
 
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Arial, sans-serif;
-      background-color: #f2f4f8;
-      color: #333;
-    }
-
-  header {
-  background: linear-gradient(135deg, #1e3c72, #2a5298);
-  color: white;
-  padding: 60px 20px;   /* ⬅️ más alto */
-  text-align: center;
-  
-    }
-
-    header h1 {
+body {
   margin: 0;
-  font-size: 36px;   /* ⬅️ título más grande */
-    
-    }
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f2f4f8;
+  color: #333;
+}
 
-    header p {
-      margin-top: 10px;
-      font-size: 16px;
-      opacity: 0.9;
-    }
-
-    nav {
-      background-color: #ffffff;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      padding: 10px;
-      text-align: center;
-    }
-
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #2a5298;
-      font-weight: 600;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 20px;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: white;
-      border-radius: 10px;
-      padding: 25px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      transition: transform 0.2s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    .card h2 {
-      margin-top: 0;
-      color: #1e3c72;
-    }
-
-    .card p {
-      line-height: 1.5;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 12px 20px;
-      background-color: #2a5298;
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
-      text-align: center;
-    }
-
-    .btn:hover {
-      background-color: #1e3c72;
-    }
-
-    footer {
-      background-color: #1e3c72;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 30px;
-      font-size: 14px;
-    }
-  .container {
-  max-width: 1000px;
-  margin: auto;
-  padding: 20px;
-  }
+/* ===== HEADER ===== */
 .main-header {
   background: linear-gradient(135deg, #1e3c72, #2a5298);
   width: 100%;
@@ -140,8 +41,85 @@
   font-size: 18px;
   opacity: 0.95;
 }
-    }
-  </style>
+
+/* ===== NAV ===== */
+nav {
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 12px;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #2a5298;
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ===== CONTENIDO ===== */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #1e3c72;
+}
+
+.card p {
+  line-height: 1.5;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 20px;
+  background-color: #2a5298;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #1e3c72;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #1e3c72;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  font-size: 14px;
+}
+</style>
   <script>
   function accesoProfesor() {
     const clave = prompt("Ingrese la contraseña del profesor:");
