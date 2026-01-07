@@ -2,60 +2,159 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Tareas para Estudiantes</title>
+  <title>Clases asistidas - Matemáticas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f6f8;
-      margin: 0;
+    * {
+      box-sizing: border-box;
     }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #f2f4f8;
+      color: #333;
+    }
+
     header {
-      background: #2c3e50;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
       color: white;
-      padding: 20px;
+      padding: 30px 20px;
       text-align: center;
     }
-    section {
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 16px;
+      opacity: 0.9;
+    }
+
+    nav {
+      background-color: #ffffff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #2a5298;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
       padding: 20px;
     }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
     .card {
       background: white;
-      padding: 20px;
-      margin: 20px auto;
-      max-width: 500px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      padding: 25px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
     }
-    a {
-      display: block;
-      margin-top: 10px;
-      padding: 10px;
-      background: #2c3e50;
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: #1e3c72;
+    }
+
+    .card p {
+      line-height: 1.5;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 20px;
+      background-color: #2a5298;
       color: white;
       text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
       text-align: center;
-      border-radius: 5px;
+    }
+
+    .btn:hover {
+      background-color: #1e3c72;
+    }
+
+    footer {
+      background-color: #1e3c72;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+      font-size: 14px;
     }
   </style>
 </head>
+
 <body>
 
-<header>
-  <h1>Tareas para Estudiantes</h1>
-  <p>Plataforma educativa de Matemáticas</p>
-</header>
+  <header>
+    <h1>Clases asistidas - Matemáticas</h1>
+    <p>Plataforma educativa para la gestión y envío de tareas</p>
+  </header>
 
-<section class="card">
-  <h2>👨‍🏫 Profesores</h2>
-  <p>Suba aquí las tareas para los estudiantes.</p>
-  <a href="#">Subir tarea</a>
-</section>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#profesor">Profesor</a>
+    <a href="#estudiante">Estudiante</a>
+  </nav>
 
-<section class="card">
-  <h2>👩‍🎓 Estudiantes</h2>
-  <p>Envíe aquí sus tareas.</p>
-  <a href="#">Enviar tarea</a>
-</section>
+  <div class="container" id="inicio">
+    <div class="cards">
+
+      <div class="card" id="profesor">
+        <h2>👨‍🏫 Área del Profesor</h2>
+        <p>
+          En esta sección el docente podrá publicar tareas,
+          guías de estudio y actividades para los estudiantes
+          de los cursos A y B.
+        </p>
+        <a href="#" class="btn">Subir tareas</a>
+      </div>
+
+      <div class="card" id="estudiante">
+        <h2>👩‍🎓 Área del Estudiante</h2>
+        <p>
+          Aquí los estudiantes podrán enviar sus tareas,
+          trabajos y actividades asignadas por el profesor
+          de manera organizada.
+        </p>
+        <a href="#" class="btn">Enviar tareas</a>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    © 2026 · Clases asistidas – Matemáticas | Plataforma educativa
+  </footer>
 
 </body>
 </html>
