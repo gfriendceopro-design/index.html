@@ -111,6 +111,17 @@
       font-size: 14px;
     }
   </style>
+  <script>
+  function accesoProfesor() {
+    const clave = prompt("Ingrese la contraseña del profesor:");
+
+    if (clave === "profesor2026") {
+      document.getElementById("profesor").style.display = "block";
+    } else {
+      alert("Acceso denegado");
+    }
+  }
+</script>
 </head>
 
 <body>
@@ -136,7 +147,7 @@
           guías de estudio y actividades para los estudiantes
           de los cursos A y B.
         </p>
-        <a href="#" class="btn">Subir tareas</a>
+        <a href="#" class="btn" onclick="accesoProfesor()">Acceder como profesor</a>
       </div>
 
       <div class="card" id="estudiante">
