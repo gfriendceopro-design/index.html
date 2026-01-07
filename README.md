@@ -131,12 +131,11 @@
     <h1>Clases asistidas - Matemáticas</h1>
     <p>Plataforma educativa para la gestión y envío de tareas</p>
   </header>
-
   <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#profesor">Profesor</a>
-    <a href="#estudiante">Estudiante</a>
-  </nav>
+  <a href="#inicio">Inicio</a>
+  <a href="#" onclick="accesoProfesor()">Acceso Profesor</a>
+  <a href="#estudiante">Estudiante</a>
+</nav>
 
   <div class="container" id="inicio">
     <div class="cards">
