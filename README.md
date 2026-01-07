@@ -117,6 +117,7 @@
 
     if (clave === "profesor2026") {
       document.getElementById("profesor").style.display = "block";
+      location.hash = "#profesor";
     } else {
       alert("Acceso denegado");
     }
@@ -140,7 +141,7 @@
   <div class="container" id="inicio">
     <div class="cards">
 
-      <div class="card" id="profesor">
+      <div class="card" id="profesor" style="display:none;">
         <h2>👨‍🏫 Área del Profesor</h2>
         <p>
           En esta sección el docente podrá publicar tareas,
