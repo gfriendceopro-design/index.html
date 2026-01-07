@@ -112,9 +112,34 @@
       margin-top: 30px;
       font-size: 14px;
     }
-    .header-content {
+  .container {
   max-width: 1000px;
   margin: auto;
+  padding: 20px;
+  }
+.main-header {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  width: 100%;
+}
+
+.header-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 90px 20px;
+  text-align: center;
+  color: white;
+}
+
+.header-inner h1 {
+  margin: 0;
+  font-size: 38px;
+}
+
+.header-inner p {
+  margin-top: 15px;
+  font-size: 18px;
+  opacity: 0.95;
+}
     }
   </style>
   <script>
@@ -133,8 +158,8 @@
 
 <body>
 
-  <header>
-  <div class="container header-content">
+  <header class="main-header">
+  <div class="header-inner">
     <h1>Clases asistidas - Matemáticas</h1>
     <p>Plataforma educativa para la gestión y envío de tareas</p>
   </div>
