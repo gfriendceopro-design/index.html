@@ -168,7 +168,7 @@ footer {
           trabajos y actividades asignadas por el profesor
           de manera organizada.
         </p>
-        <a href="https://forms.gle/KaLwZj7UakUBZcfc9" 
+        <a href="https://forms.gle/6Ecq7oBXtpY7nQwr7" 
    class="btn" 
    target="_blank">
    Enviar tarea
