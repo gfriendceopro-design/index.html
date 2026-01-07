@@ -110,6 +110,10 @@
       margin-top: 30px;
       font-size: 14px;
     }
+    .header-content {
+  max-width: 1000px;
+  margin: auto;
+    }
   </style>
   <script>
   function accesoProfesor() {
@@ -128,9 +132,11 @@
 <body>
 
   <header>
+  <div class="container header-content">
     <h1>Clases asistidas - Matemáticas</h1>
     <p>Plataforma educativa para la gestión y envío de tareas</p>
-  </header>
+  </div>
+</header>
   <nav>
   <a href="#inicio">Inicio</a>
   <a href="#" onclick="accesoProfesor()">Acceso Profesor</a>
