@@ -17,16 +17,18 @@
       color: #333;
     }
 
-    header {
-      background: linear-gradient(135deg, #1e3c72, #2a5298);
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
+  header {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  padding: 60px 20px;   /* ⬅️ más alto */
+  text-align: center;
+  
     }
 
     header h1 {
-      margin: 0;
-      font-size: 28px;
+  margin: 0;
+  font-size: 36px;   /* ⬅️ título más grande */
+    
     }
 
     header p {
