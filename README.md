@@ -121,16 +121,22 @@ footer {
 }
 </style>
   <script>
-  function accesoProfesor() {
-    const clave = prompt("Ingrese la contraseña del profesor:");
+function accesoProfesor() {
+  const clave = prompt("Ingrese la contraseña del profesor:");
 
-    if (clave === "profesor2026") {
-      document.getElementById("profesor").style.display = "block";
-      location.hash = "#profesor";
-    } else {
-      alert("Acceso denegado");
-    }
+  if (clave === "profesor2026") {
+    // Muestra el área del profesor
+    document.getElementById("profesor").style.display = "block";
+    
+    // Muestra el cuadro con el link a las tareas
+    document.getElementById("cuadro-tareas").style.display = "block";
+
+    // Hace scroll automático hasta el área del profesor
+    location.hash = "#profesor";
+  } else {
+    alert("Acceso denegado");
   }
+}
 </script>
 </head>
 
@@ -158,6 +164,11 @@ footer {
           guías de estudio y actividades para los estudiantes
           de los cursos A y B.
         </p>
+        <div id="cuadro-tareas" style="display:none; margin-top:20px; padding:20px; border:2px solid #2a5298; border-radius:10px; background-color:#f0f4ff;">
+  <h3>📂 Acceso a Tareas Subidas</h3>
+  <p>Haz clic en el botón para ver todas las tareas enviadas por los estudiantes:</p>
+  <a href="https://forms.gle/6Ecq7oBXtpY7nQwr7" target="_blank" class="btn">Ver Tareas</a>
+</div>
         <a href="#" class="btn" onclick="accesoProfesor()">Acceder como profesor</a>
       </div>
 
