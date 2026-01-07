@@ -168,7 +168,11 @@ footer {
           trabajos y actividades asignadas por el profesor
           de manera organizada.
         </p>
-        <a href="#" class="btn">Enviar tareas</a>
+        <a href="https://forms.gle/KaLwZj7UakUBZcfc9" 
+   class="btn" 
+   target="_blank">
+   Enviar tarea
+</a>
       </div>
 
     </div>
