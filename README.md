@@ -179,6 +179,11 @@ function accesoProfesor() {
           trabajos y actividades asignadas por el profesor
           de manera organizada.
         </p>
+        <a href="https://drive.google.com/file/d/1iXd7tJxrQLNiw7vE-lLKUJR0WDSXyBIG/view?usp=drivesdk"
+   class="btn"
+   target="_blank">
+   Ver tarea del profesor
+</a>
         <a href="https://forms.gle/6Ecq7oBXtpY7nQwr7" 
    class="btn" 
    target="_blank">
